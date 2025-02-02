@@ -168,3 +168,4 @@ repl_history
 
 # Dependency directories
 node_modules/
+chkpt-dr/
