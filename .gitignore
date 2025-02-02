@@ -100,3 +100,71 @@ repl_history
 node_modules/
 .idea/
 .idea/*
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+workspace.xml
+tasks.xml
+usage.statistics.xml
+shelf/
+
+# Maven specific files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# SBT specific files
+project/
+.cache/
+.history/
+.scala_dependencies
+lib_managed/
+src_managed/
+target/
+dist/
+
+# Spark specific files
+.metastore_db/
+.derby.log
+spark-warehouse/
+__pycache__/
+*.pyc
+
+# Logs and temp files
+*.log
+*.swp
+*.swo
+*.DS_Store
+*.class
+*.jar
+*.war
+*.zip
+*.db
+*.gz
+*.tmp
+hs_err_pid*
+repl_history
+.idea_modules/
+
+# VS Code files (if using VS Code)
+.vscode/
+
+# MacOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Generated reports
+*.csv
+*.json
+*.parquet
+
+# Dependency directories
+node_modules/
