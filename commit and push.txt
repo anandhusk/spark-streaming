@@ -1,1 +1,6 @@
-git add . && git commit -m "Commit on $(date)" && git push
+chmod +x /Users/ask/dev/spark-streaming/autopush.sh
+
+crontab -e
+
+
+*/5 * * * * /Users/ask/dev/spark-streaming/autopush.sh

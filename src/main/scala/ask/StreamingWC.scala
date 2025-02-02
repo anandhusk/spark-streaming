@@ -13,7 +13,7 @@ object StreamingWC {
       .master("local[3]")
       .appName("streamer")
       .config("spark.streaming.stopGracefullyOnShutdown", "true")
-      .config("spark.sql.shuffle.partitions", "true")
+      .config("spark.sql.shuffle.partitions", 3)
       .getOrCreate()
 
     spark.sparkContext.setLogLevel("ERROR")
