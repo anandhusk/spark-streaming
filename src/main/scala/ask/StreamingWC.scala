@@ -1,7 +1,7 @@
 package ask
 
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions.expr
+import org.apache.spark.sql.functions._
 import org.apache.spark.sql.streaming.StreamingQuery
 
 object StreamingWC {
@@ -24,7 +24,7 @@ object StreamingWC {
       .load()
 
     val wordDf = lineDf
-      .select(expr("explode(split(value, ' ') as word"))
+      .select(expr("explode(split(value,' ')) as word"))
 
     val countDf = wordDf.groupBy("word").count()
 
