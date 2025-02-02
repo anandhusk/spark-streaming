@@ -1,5 +1,9 @@
 package ask
 
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions.expr
+import org.apache.spark.sql.streaming.StreamingQuery
+
 object StreamingWC {
 
   def main(args: Array[String]): Unit = {
