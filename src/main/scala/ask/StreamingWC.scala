@@ -26,7 +26,8 @@ object StreamingWC {
       .load()
 
     val wordDf = lineDf
-      .select(expr("explode(split(value,' ')) as word"))
+//      .select(expr("explode(split(value,' ')) as word"))
+      .select(explode(split(col("value"), " ")).as("word"))
 
     val countDf = wordDf.groupBy("word").count()
 
